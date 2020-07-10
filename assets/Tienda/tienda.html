@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9a5342def2.js" crossorigin="anonymous"></script>
+
+    <title>Store</title>
+    
+    <link rel="stylesheet" href="../Menu_Footer/stylemenu.css">
+    <link rel="stylesheet" href="./tienda.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="contenedortodas">
+<!-- ACA EMPIEZA MENU -->
+    <div id="sticky-header" class="transparent-header">
+        <div class="container-fluid s-container-full-padding">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-menu menu-style-two">
+                        <nav>
+                            <div class="logo">
+                                <a href="index-2.html"><img src="../Menu_Footer/pics/logo.png" alt="Logo"></a>
+                            </div>
+                            <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex" style="display: block;">
+                                <ul>
+                                    <li class="mouseOver" id="menuDropper"><a href="../../index.html" onmouseleave="leave('menu1');">Home</a>
+                                        <ul class="submenu" id="menu1">
+                                            <li ><a href="index-2.html" onmouseover="menuDrop('menu1');" onmouseleave="leave('menu1');">Home Light</a></li>
+                                            <li><a href="index.html" onmouseover="menuDrop('menu1');" onmouseleave="leave('menu1');">Home Dark</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mouseOver"><a href="../Galeria/galeria.html" onmouseover="menuDrop('menu2');" onmouseleave="leave('menu2');">Galery</a>
+                                        <ul class="submenu" id="menu2">
+                                            <li><a href="about-us.html" onmouseover="menuDrop('menu2');" onmouseleave="leave('menu2');">About Story</a></li>
+                                            <li><a href="upcoming-games.html" onmouseover="menuDrop('menu2');" onmouseleave="leave('menu2');">Upcoming Games</a></li>
+                                            <li><a href="game-single.html" onmouseover="menuDrop('menu2');" onmouseleave="leave('menu2');">Game Single</a></li>
+                                        </ul>
+                                    </li><!-- 
+                                    <li class=""><a href="game-overview.html">Overview</a></li>
+                                    <li class="show"><a href="community.html">Community</a></li> -->
+                                    <li class=""><a href="../Juegos/juegos.html">Games</a></li>
+                                    <li class="mouseOver"><a href="#" onmouseover="menuDrop('menu3');" onmouseleave="leave('menu3');" onmouseleave="leave('menu2');">Store</a>
+                                        <ul class="submenu" id="menu3">
+                                            <li><a href="blog.html" onmouseover="menuDrop('menu3');" onmouseleave="leave('menu3');">Cat 1</a></li>
+                                            <li><a href="blog-details.html" onmouseover="menuDrop('menu3');" onmouseleave="leave('menu3');">Cat 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../Portafolio/portafolio.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="mobile-menu"></div>
+                </div>
+                <!-- Modal Search -->
+                <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <form>
+                                <input type="text" placeholder="Search here...">
+                                <button><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ACA TERMINA MENU -->
+<!-- ACA EMPIEZA TIENDA -->
+<section class="container content-section">
+    <h2 class="section-header">¡LO MAS JUGADO!</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Mario Bross</span>
+            <img class="shop-item-image" src="./picstienda/mario.png">
+            <p><strong>Categoria:</strong> <i>Aventura</i></p>
+            <p><strong>Consolas:</strong> <i>Play 4, Xbox One</i></p>
+            <p><strong>Creador:</strong> <i>Nintendo</i></p>
+            <p class="description"><i>"Cuando se trata de clasicos este es uno de los mas indicados... Un juego con gran cantidad de mundos y retos".</i></p>
+            <div class="shop-item-details">
+                <span class="shop-item-price">$3.49</span>
+                <button class="btn btn-primary shop-item-button" type="button">Añadir al carro</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Contra</span>
+            <img class="shop-item-image" src="./picstienda/contra.jpg">
+            <p><strong>Categoria:</strong> <i>Accion</i></p>
+            <p><strong>Consolas:</strong> <i>Play Station</i></p>
+            <p><strong>Creador:</strong> <i>Konami</i></p>
+            <p class="description"><i>"Una buena opcion para los amantes de la accion, disparos y explosiones... Un clasico que no falta".</i></p>
+            <div class="shop-item-details">
+                <span class="shop-item-price">$3.50</span>
+                <button class="btn btn-primary shop-item-button"type="button">Añadir al carro</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Triki</span>
+            <img class="shop-item-image" src="./picstienda/triki.jpg">
+            <p><strong>Categoria:</strong> <i>Estrategia</i></p>
+            <p><strong>Consolas:</strong> <i>Windows, Mac</i></p>
+            <p><strong>Creador:</strong> <i>Friv</i></p>
+            <p class="description"><i>"Tan simple como x y o... Un juego que requiere de un poco de estrategia para poder hacer ¡triki! y divertirte un rato".</i></p>
+            <div class="shop-item-details">
+                <span class="shop-item-price">$4.29</span>
+                <button class="btn btn-primary shop-item-button" type="button">Añadir al carro</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Snake</span>
+            <img class="shop-item-image" src="./picstienda/snake.webp">
+            <p><strong>Categoria:</strong> <i>Logica</i></p>
+            <p><strong>Consolas:</strong> <i>Android, iOS</i></p>
+            <p><strong>Creador:</strong> <i>Gremlin</i></p>
+            <p class="description"><i>"Clasico de los celulares moviles... Un juego que a pesar del tiempo nos brinda un buen rato de diversion".</i></p>
+            <div class="shop-item-details">
+                <span class="shop-item-price">$3.19</span>
+                <button class="btn btn-primary shop-item-button" type="button">Añadir al carro</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">¡LO ULTIMO!</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Tetris</span>
+            <img class="shop-item-image" src="./picstienda/tetris.png">
+            <p><strong>Categoria:</strong> <i>Estrategia</i></p>
+            <p><strong>Consolas:</strong> <i>Windows, Android</i></p>
+            <p><strong>Creador:</strong> <i>Sega</i></p>
+            <p class="description"><i>"Un tipo de juego en donde necesitamos gran concentracion y agilidad es este, no hay comparacion alguna".</i></p>
+            <div class="shop-item-details">
+                <span class="shop-item-price">$4.79</span>
+                <button class="btn btn-primary shop-item-button" type="button">Añadir al carro</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Pacman</span>
+            <img class="shop-item-image" src="./picstienda/Pacman_.webp">
+            <p><strong>Categoria:</strong> <i>Aventura</i></p>
+            <p><strong>Consolas:</strong> <i>Xbox, Windows</i></p>
+            <p><strong>Creador:</strong> <i>Midway Games</i></p>
+            <p class="description"><i>"Y como dejar atras este ejemplar... Uno de los juegos mas exitosos y reconocido que hayamos podido jugar".</i></p>
+            <div class="shop-item-details">
+                <span class="shop-item-price">$2.79</span>
+                <button class="btn btn-primary shop-item-button" type="button">Añadir al carro</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">CARRO</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">JUEGO</span>
+        <span class="cart-price cart-header cart-column">PRECIO</span>
+        <span class="cart-quantity cart-header cart-column">CANTIDAD</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">COMPRAR</button>
+</section>
+
+<!-- ACA TERMINA GALERIA -->
+
+    <!-- ACA EMPIEZA FOOTER -->
+    <footer>
+        <div class="container-footer">
+            <div class="col-12">
+                <div class="newsletter-wrap container-subs">
+                    <div class="section-title newsletter-title">
+                        <h2>Our <span>Newsletter</span></h2>
+                    </div>
+                    <div class="newsletter-form">
+                        <form action="#">
+                            <div class="newsletter-form-grp">
+                                <i class="far fa-envelope"></i>
+                                <input type="email" placeholder="Enter your email...">
+                            </div>
+                            <button>SUBSCRIBE <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="footer-logo mb-35">
+                                    <a href="index.html"><img src="../Menu_Footer/pics/social-icons.png" alt=""></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Gemas marketplace the relase etras thats sheets continig passag.</p>
+                                    <div class="footer-contact">
+                                        <ul>
+                                            <li><i class="fas fa-map-marker-alt"></i> <span>Address : </span>PO Box W75 Street
+                                                lan West new queens</li>
+                                            <li><i class="fas fa-headphones"></i> <span>Phone : </span>+24 1245 654 235</li>
+                                            <li><i class="fas fa-envelope-open"></i><span>Email : </span>info@exemple.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Products</h5>
+                                </div>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#">Graphics (26)</a></li>
+                                        <li><a href="#">Backgrounds (11)</a></li>
+                                        <li><a href="#">Fonts (9)</a></li>
+                                        <li><a href="#">Music (3)</a></li>
+                                        <li><a href="#">Photography (3)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Need Help?</h5>
+                                </div>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#">Terms &amp; Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Refund Policy</a></li>
+                                        <li><a href="#">Affiliate</a></li>
+                                        <li><a href="#">FAQUse Cases</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Follow us</h5>
+                                </div>
+                                <div class="footer-social">
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.instagram.com/livingindiatv/">instagram<span></span></a></li>
+                                        <li><a href="https://in.pinterest.com/livingindiatv/">pinterest<span></span></a></li>
+                                        <li><a href="https://youtube.com">youtube<span></span></a></li>
+                                        <li><a href="https://plus.google.com/102689304172526656580">gplus<span></span></a></li>
+                                        <li><a href="https://twitter.com/livingindiatv">twitter<span></span></a></li>
+                                        <li><a href="https://www.facebook.com/livingindiatv/">facebook<span></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widget mb-50">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <!-- ACA EMPIEZAN LOS SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="../Menu_Footer/menu.js"></script>
+    <script src="./tienda.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9a5342def2.js" crossorigin="anonymous"></script>
+
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="./assets/Pagina Principal/estilospp/pgprin.css">
+    <link rel="stylesheet" href="./assets/Pagina Principal/estilospp/chatmodal.css">
+    <link rel="stylesheet" href="./assets/Menu_Footer/stylemenu.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="contenedortodas">
+<!-- ACA EMPIEZA MENU -->
+    <div id="sticky-header" class="transparent-header">
+        <div class="container-fluid s-container-full-padding">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-menu menu-style-two">
+                        <nav>
+                            <div class="logo">
+                                <a href="index-2.html"><img src="./assets/Menu_Footer/pics/logo.png" alt="Logo"></a>
+                            </div>
+                            <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex" style="display: block;">
+                                <ul>
+                                    <li class="mouseOver" id="menuDropper"><a href="#" onmouseleave="leave('menu1');">Home</a>
+                                        <ul class="submenu" id="menu1">
+                                            <li ><a href="index-2.html" onmouseover="menuDrop('menu1');" onmouseleave="leave('menu1');">Home Light</a></li>
+                                            <li><a href="index.html" onmouseover="menuDrop('menu1');" onmouseleave="leave('menu1');">Home Dark</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mouseOver"><a href="./assets/Galeria/galeria.html" onmouseover="menuDrop('menu2');" onmouseleave="leave('menu2');">Galery</a>
+                                        <ul class="submenu" id="menu2">
+                                            <li><a href="about-us.html" onmouseover="menuDrop('menu2');" onmouseleave="leave('menu2');">About Story</a></li>
+                                            <li><a href="upcoming-games.html" onmouseover="menuDrop('menu2');" onmouseleave="leave('menu2');">Upcoming Games</a></li>
+                                            <li><a href="game-single.html" onmouseover="menuDrop('menu2');" onmouseleave="leave('menu2');">Game Single</a></li>
+                                        </ul>
+                                    </li><!-- 
+                                    <li class=""><a href="game-overview.html">Overview</a></li>
+                                    <li class="show"><a href="community.html">Community</a></li> -->
+                                    <li class=""><a href="./assets/Juegos/juegos.html">Games</a></li>
+                                    <li class="mouseOver"><a href="./assets/Tienda/tienda.html" onmouseover="menuDrop('menu3');" onmouseleave="leave('menu3');" onmouseleave="leave('menu2');">Store</a>
+                                        <ul class="submenu" id="menu3">
+                                            <li><a href="blog.html" onmouseover="menuDrop('menu3');" onmouseleave="leave('menu3');">Cat 1</a></li>
+                                            <li><a href="blog-details.html" onmouseover="menuDrop('menu3');" onmouseleave="leave('menu3');">Cat 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./assets/Portafolio/portafolio.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="mobile-menu"></div>
+                </div>
+                <!-- Modal Search -->
+                <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <form>
+                                <input type="text" placeholder="Search here...">
+                                <button><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ACA TERMINA MENU -->
+<!-- ACA EMPIEZA PAGINA PRINCIPAL -->
+
+    <div class="content">
+
+        <!-- ACA EMPIEZA EL SLIDE -->
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./assets/Pagina Principal/pics/pressstart.gif" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./assets/Pagina Principal/pics/carro retro.gif" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./assets/Pagina Principal/pics/NINJA.gif" style="width:100%">
+                <div class="text"></div>
+
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./assets/Pagina Principal/pics/pacman2.gif" style="width:100%">
+                <div class="text"></div>
+
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./assets/Pagina Principal/pics/mario.gif" style="width:100%">
+                <div class="text"></div>
+
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./assets/Pagina Principal/pics/GAMEOVER.gif" style="width:100%">
+                <div class="text"></div>
+
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <!-- ACA TERMINA SLIDE -->
+
+        <div class="cont2">
+            <h1>DIVIERTE
+                <SPAN>EN GRANDE</SPAN>
+            </h1>
+            <h4>Atrevete a jugar y recordar lo fascinante de los juegos retro</h4>
+            <br>
+            <button>
+                <a href="./assets/Juegos/juegos.html">JUEGA YA</a>
+            </button>
+
+        </div>
+        <div class="titulo">
+            <h2>CURIOSIDADES
+                <SPAN>RETROGAMES</SPAN>
+            </h2>
+        </div>
+
+        <div class="cont3">
+
+
+            <div class="divimario">
+                <h3>MARIO BROSS</h3>
+                <br>
+                <p class="parmario"> Es un videojuego de plataformas, diseñado por Shigeru Miyamoto, lanzado el 13 de
+                    septiembre de 1985 y producido por la compañía Nintendo, para la consola Nintendo Entertainment
+                    System (NES). El juego describe las aventuras de los hermanos Mario y Luigi, personajes que ya
+                    protagonizaron el arcade Mario Bros. de 1983. En esta ocasión ambos deben rescatar a la Princesa
+                    Peach del Reino Champiñón que fue secuestrada por el rey de los Koopas, Bowser. A través de ocho
+                    diferentes mundos, los jugadores pueden controlar a alguno de los dos hermanos y deben enfrentarse
+                    finalmente tras los niveles correspondientes de cada mundo a los monstruos de cada castillo para
+                    rescatar a la Princesa Peach.
+
+                </p>
+                <br>
+                <p class="parmario"> Este juego es considerado el primer videojuego de plataformas de desplazamiento
+                    lateral de Nintendo y se ha convertido en un hito debido a la trascendencia de su diseño y papel en
+                    la industria de los videojuegos. Su lanzamiento fue el primer gran récord de ventas posterior a la
+                    crisis de la industria de los videojuegos de 1983 (alcanzando más de 10 millones de cartuchos
+                    vendidos), por lo que popularizó, en cierta manera, a la consola NES. En 1999 fue reconocido como
+                    uno de los videojuegos más vendidos de todos los tiempos.5​ Shigeru Miyamoto su creador, relata la
+                    existencia de Super Mario Bros. debido a que cuando viajaba en un tren le gustaba mirar por la
+                    ventana, y se imaginaba que estaba allí saltando afuera.6​ Debido a la popularidad de Mario, se
+                    encuentra también en otros videojuegos como el original Donkey Kong y Super Smash Bros.
+
+                </p>
+            </div>
+
+            <div class="divimario2"><img class="imgn1" src="./assets/Pagina Principal/pics/curiosidades mario.png" alt=""></div>
+
+
+
+        </div>
+       
+        <div class="cont4">
+
+            <div class="divipacman"><img class="imgn2" src="./assets/Pagina Principal/pics/pacman.gif" alt="">
+            </div>
+
+
+            <div class="divipacman2">
+                <h3>PAC MAN</h3>
+                <br>
+                <p class="parpacman"> El creador del videojuego, Toru Iwatani, confesó en una entrevista con la revista
+                    Time, que se inspiró en una pizza para el diseño de Pac-Man. Cuando el japonés tomó una rebanada se
+                    dio cuenta que la silueta de la pizza podía ser el personaje que buscaba.
+
+                    Iwatani pensaba bautizar al videojuego como Pakkuman, por la onomatopeya ‘paku-paku’ que simula el
+                    sonido de una persona masticando. El nombre que había pensado para introducirlo a Estados Unidos era
+                    Puck-Man, pero los empresarios lo cambiaron por el miedo a que las personas lo llamaran Fuck-Man
+                    (expresión vulgar en inglés). Así lo señala la web de la revista Rolling Stone.
+
+
+                </p>
+                <br>
+                <p class="parpacman"> En un principio, Pac-Man fue pensado como un juego para chicas. De hecho, una de
+                    las estrategias para atraer a las mujeres fue la elección de nombres para los fantasmas Blinky,
+                    Pinky, Inky y Clyde, que les dotaba de una personalidad tierna. "Hizo un llamamiento a una nueva
+                    generación de jugadoras que ha crecido empoderada”, dijo su creador a Time. Además destacó que es un
+                    juego universal que gusta tanto a adultos mayores como a niños, al público femenino como al
+                    masculino. Asimismo, Ms. Pac-Man (1982) fue el primer personaje femenino de la historia de los
+                    videojuegos. Según Iwatani, de hecho Pac-Man iba a ser mujer en un principio.
+
+
+                </p>
+            </div>
+        </div>
+
+
+        <div class="titulo2">
+            <h2>DISFRUTA DE LOS MEJORES
+                <SPAN>VIDEOJUEGOS RETRO</SPAN>
+            </h2>
+        </div>
+
+        <div class="cont5">
+            
+            <div class="contgirl">
+                <h2 class="girlpar">En nuestro sitio web encontraras los mejores juegos retro de la historia</h2>
+                <br>
+                <h2 class="girlpar">Podras ver una galeria unica de imagenes con los mejores juegos que hicieron de tu infancia algo
+                    inolvidable</h2>
+                <br>
+                <h2 class="girlpar">Ademas, tendras una tienda de productos variados para hacer de tu visita la mejor experiencia</h2>
+            </div>
+            <div class="contgirl"><img class="imgirl"src="./assets/Pagina Principal/pics/GIRL.gif" alt=""></div>
+
+
+
+        </div>
+        <div class="loading">
+            <img class="imgloa" src="./assets/Pagina Principal/pics/imgpress.gif">
+        </div>
+
+       
+    </div>
+    <!-- ACA TERMINA PAGINA PRINCIPAL -->
+    <!-- ACA EMPIEZA MODAL Y CHAT -->
+    <div class="contenedor-todo">
+
+        <div class="chat-container none" id="chat-container">
+            <div class="chat-header">
+                <p>Cuentanos, ¿que te incomoda?</p>
+            </div>
+            <div class="chat-window" id="chat-window">
+                <ul id="chat-txt"></ul>
+                <p></p>
+            </div>
+            <div class="input-container">
+                <input type="text" class="chat-input" id="chat-input" placeholder="Dejanos tus comentarios"></input>
+                <button class="chat-btn" id="chat-btn">Enviar</button>
+            </div>
+        </div>
+        <button id="abrir-chat-btn" class="abrir-chat-btn "><i class="far fa-comments fa-3x fa-lg"></i></button>
+        <div class="modal-container " id="modal-container">
+            <div class="modal1" id="modal">
+                <div class="modal-header">
+                    <h3>Ingresa tus datos para continuar</h3>
+                    <button class="close-modal" id="close-modal"><i class="far fa-times-circle fa-2x"></i></button>
+                </div>
+                <form class="modal-form" id="modal-form">
+                    <label for="modal-name">Nombre</label>
+                    <input type="text" id="modal-name" placeholder="Enter name">
+                    <label for="modal-last-name">Apellido</label>
+                    <input type="text" id="modal-last-name" placeholder="Enter last name">
+                    <label for="modal-password">Contraseña</label>
+                    <input type="password" id="modal-password" placeholder="Enter password">
+                    <button type="submit" id="modal-btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ACA TERMINA MODAL Y CHAT -->
+    <!-- ACA EMPIEZA FOOTER -->
+    <footer>
+        <div class="container-footer">
+            <div class="col-12">
+                <div class="newsletter-wrap container-subs">
+                    <div class="section-title newsletter-title">
+                        <h2>Our <span>Newsletter</span></h2>
+                    </div>
+                    <div class="newsletter-form">
+                        <form action="#">
+                            <div class="newsletter-form-grp">
+                                <i class="far fa-envelope"></i>
+                                <input type="email" placeholder="Enter your email...">
+                            </div>
+                            <button>SUBSCRIBE <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="footer-logo mb-35">
+                                    <a href="index.html"><img src="./assets/Menu_Footer/pics/social-icons.png" alt=""></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Gemas marketplace the relase etras thats sheets continig passag.</p>
+                                    <div class="footer-contact">
+                                        <ul>
+                                            <li><i class="fas fa-map-marker-alt"></i> <span>Address : </span>PO Box W75 Street
+                                                lan West new queens</li>
+                                            <li><i class="fas fa-headphones"></i> <span>Phone : </span>+24 1245 654 235</li>
+                                            <li><i class="fas fa-envelope-open"></i><span>Email : </span>info@exemple.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Products</h5>
+                                </div>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#">Graphics (26)</a></li>
+                                        <li><a href="#">Backgrounds (11)</a></li>
+                                        <li><a href="#">Fonts (9)</a></li>
+                                        <li><a href="#">Music (3)</a></li>
+                                        <li><a href="#">Photography (3)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Need Help?</h5>
+                                </div>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#">Terms &amp; Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Refund Policy</a></li>
+                                        <li><a href="#">Affiliate</a></li>
+                                        <li><a href="#">FAQUse Cases</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Follow us</h5>
+                                </div>
+                                <div class="footer-social">
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.instagram.com/livingindiatv/">instagram<span></span></a></li>
+                                        <li><a href="https://in.pinterest.com/livingindiatv/">pinterest<span></span></a></li>
+                                        <li><a href="https://youtube.com">youtube<span></span></a></li>
+                                        <li><a href="https://plus.google.com/102689304172526656580">gplus<span></span></a></li>
+                                        <li><a href="https://twitter.com/livingindiatv">twitter<span></span></a></li>
+                                        <li><a href="https://www.facebook.com/livingindiatv/">facebook<span></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widget mb-50">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <!-- ACA EMPIEZAN LOS SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./assets/Menu_Footer/menu.js"></script>
+    <script src="./assets/Pagina Principal/scriptpp/slide.js"></script>
+    <script src="./assets/Pagina Principal/scriptpp/chatmodal.js"></script>
+
+</body>
+
+</html>

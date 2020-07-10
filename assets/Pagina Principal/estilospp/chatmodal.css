@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Blinker", sans-serif;
+}
+.contenedor-todo {
+  position: relative;
+}
+/* ------------------------- Chat y boton del chat */
+.chat-container {
+  width: 300px;
+  border: 1px solid #1f0e20;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f0e20;
+  position: fixed;
+  right: 100px;
+  bottom: 20px;
+}
+.chat-container.none {
+  display: none;
+}
+
+.chat-header {
+  border-bottom: 1px solid #868685;
+  color: aliceblue;
+  padding: 5px 5px 0 5px;
+}
+.chat-header p {
+  margin-bottom: 5px;
+}
+.chat-window {
+  background-color: #fff;
+  padding: 10px 8px;
+  border-bottom: 1px solid #868685;
+  height: 180px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.txt-list {
+  display: block;
+  text-decoration: none;
+  list-style-type: none;
+  margin-bottom: 8px;
+  max-width: 80%;
+}
+
+.txt-list p {
+  display: inline-block;
+  border: 1px solid #1f0e20;
+  border-radius: 15px;
+  padding: 5px 8px;
+  max-width: 100%;
+}
+.input-container {
+  display: flex;
+
+  margin: 3px 8px;
+}
+.chat-input {
+  width: 85%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+.chat-btn {
+  cursor: pointer !important;
+  background-color: #fff !important;
+  border: none !important;
+  border-radius: 0 5px 5px 0 !important;
+  color: #fff !important;
+  background-color: #e4a101 !important;
+}
+.chat-btn,
+.chat-input {
+  padding: 5px 8px !important;
+  margin: 5px 0 !important;
+  font-family: "Blinker", sans-serif !important;
+}
+.abrir-chat-btn {
+  position: fixed !important;
+  cursor: pointer !important;
+
+  width: auto !important;
+  height: auto !important;
+  background-color: #1f0e20;
+  padding: 15px !important;
+  border-radius: 50% !important;
+  right: 10px !important;
+  bottom: 20px !important;
+  color: #e4a101 !important;
+  border: none;
+}
+/*---------------------------- Modal */
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal-container.d-none {
+  display: none;
+}
+.modal1 {
+  background-color: #1f0e20;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 1px solid #868685;
+  background-color: #1f0e20;
+  color: #fff;
+}
+.modal-header .close-modal {
+  cursor: pointer;
+  background-color: transparent;
+  width: auto !important;
+  height: auto !important;
+  border: none;
+  color: #e4a101;
+  transform: translateX();
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.modal-form label,
+.modal-form input {
+  margin: 0 5px 5px 5px;
+}
+.modal-form input {
+  padding: 5px 3px;
+  font-family: "Blinker", sans-serif;
+  font-size: 15px;
+  border: 1.5px solid #111;
+
+  border-radius: 3px;
+}
+.modal-form input:focus {
+  border: 2px solid #e4a101;
+}
+.modal-form input:last-of-type {
+  margin-bottom: 20px;
+}
+.modal-form button {
+  cursor: pointer;
+  border: none !important;
+  background-color: #1f0e20;
+  border-radius: 0 !important;
+  width: 100% !important;
+  color: #e4a101;
+  padding: 10px 0 !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+.modal-form button:hover {
+  color: #1f0e20;
+  background-color: #e4a101;
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9a5342def2.js" crossorigin="anonymous"></script>
+
+    <title>Games</title>
+    
+    <link rel="stylesheet" href="../Menu_Footer/stylemenu.css">
+    <link rel="stylesheet" href="./juegos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+    </style>
+</head>
+
+<body>
+<div class="contenedortodas">
+<!-- ACA EMPIEZA MENU -->
+    <div id="sticky-header" class="transparent-header">
+        <div class="container-fluid s-container-full-padding">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-menu menu-style-two">
+                        <nav>
+                            <div class="logo">
+                                <a href="index-2.html"><img src="../Menu_Footer/pics/logo.png" alt="Logo"></a>
+                            </div>
+                            <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex" style="display: block;">
+                                <ul>
+                                    <li class="mouseOver" id="menuDropper"><a href="../../index.html" onmouseleave="leave('menu1');">Home</a>
+                                        <ul class="submenu" id="menu1">
+                                            <li ><a href="index-2.html" onmouseover="menuDrop('menu1');" onmouseleave="leave('menu1');">Home Light</a></li>
+                                            <li><a href="index.html" onmouseover="menuDrop('menu1');" onmouseleave="leave('menu1');">Home Dark</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mouseOver"><a href="../Galeria/galeria.html" onmouseover="menuDrop('menu2');" onmouseleave="leave('menu2');">Galery</a>
+                                        <ul class="submenu" id="menu2">
+                                            <li><a href="about-us.html" onmouseover="menuDrop('menu2');" onmouseleave="leave('menu2');">About Story</a></li>
+                                            <li><a href="upcoming-games.html" onmouseover="menuDrop('menu2');" onmouseleave="leave('menu2');">Upcoming Games</a></li>
+                                            <li><a href="game-single.html" onmouseover="menuDrop('menu2');" onmouseleave="leave('menu2');">Game Single</a></li>
+                                        </ul>
+                                    </li><!-- 
+                                    <li class=""><a href="game-overview.html">Overview</a></li>
+                                    <li class="show"><a href="community.html">Community</a></li> -->
+                                    <li class=""><a href="#">Games</a></li>
+                                    <li class="mouseOver"><a href="../Tienda/tienda.html" onmouseover="menuDrop('menu3');" onmouseleave="leave('menu3');" onmouseleave="leave('menu2');">Store</a>
+                                        <ul class="submenu" id="menu3">
+                                            <li><a href="blog.html" onmouseover="menuDrop('menu3');" onmouseleave="leave('menu3');">Cat 1</a></li>
+                                            <li><a href="blog-details.html" onmouseover="menuDrop('menu3');" onmouseleave="leave('menu3');">Cat 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../Portafolio/portafolio.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="mobile-menu"></div>
+                </div>
+                <!-- Modal Search -->
+                <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <form>
+                                <input type="text" placeholder="Search here...">
+                                <button><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ACA TERMINA MENU -->
+<!-- ACA EMPIEZA JUEGOS -->
+
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="card mb-4 mt-5" style="width: 18rem;">
+            <img src="./pics/hangman.jpg" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title text-center">Hangman</h5>
+                <p class="card-text ">
+                    El ahorcado es el favorito de la vieja escuela, un juego de palabras donde el objetivo es simplemente econtrar la palabra o palabras que faltan.
+                </p>
+                <a href="./juegosfuncionales/indexjuegos/hangman.html" class="btn btn-primary"
+                    style="background-color: #e4a101; border: none;">Play now</a>
+            </div>
+        </div>
+        <div class="card mb-4 mt-5" style="width: 18rem;">
+            <img src="./pics/snake.jpg" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title text-center">Snake</h5>
+                <p class="card-text">
+                    Snake es el nombre común de un concepto de videojuego en el que el jugador maniobra una línea que crece en longitud, siendo la línea en sí un obstáculo principal.</p>
+                <a href="./juegosfuncionales/indexjuegos/snake.html" class="btn btn-primary"
+                    style="background-color: #e4a101; border: none;">Play now</a>
+            </div>
+        </div>
+        <div class="card mb-4 mt-5" style="width: 18rem;">
+            <img src="./pics/triki.jpg" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title text-center">TriKi</h5>
+                <p class="card-text">TriKi  es un clásico juego de bolígrafo y papel o de mesa para dos jugadores</p>
+                <a href="./juegosfuncionales/indexjuegos/triki.html" class="btn btn-primary"
+                    style="background-color: #e4a101; border: none;">Play now</a>
+            </div>
+        </div>
+        <!-- segunda fila -->
+        <div class="card mb-4" style="width: 18rem;">
+            <img src="./pics/metroid.jpg" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title text-center">Metroid</h5>
+                <p class="card-text">
+                    Metroid es una franquicia de juegos de acción y ciencia ficción creada por Nintendo.
+                    La serie es producida principalmente por los primeros desarrolladores de la compañía, Nintendo R & D1.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #e4a101; border: none;">Play now</a>
+            </div>
+        </div>
+        <div class="card mb-4" style="width: 18rem;">
+            <img src="./pics/mortalKombat.jpg" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title text-center">Mortal Kombat II</h5>
+                <p class="card-text">
+                    Mortal Kombat II es un juego de lucha producido originalmente por Midway para
+                    arcadas en 1993. Más tarde fue portado a múltiples sistemas domésticos, incluido el MS-DOS.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #e4a101; border: none;">Play now</a>
+            </div>
+        </div>
+        <div class="card mb-4" style="width: 18rem;">
+            <img src="./pics/SuperMario.jpg" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title text-center">Super Mario</h5>
+                <p class="card-text">
+                    El juego, que se basó en el juego arcade Mario Bros, ayudó a lanzar uno de las franquicias más populares de los juegos</p>
+                <a href="#" class="btn btn-primary" style="background-color: #e4a101; border: none;">Play now</a>
+            </div>
+        </div>
+        <!-- Tercera fila -->
+        <div class="card mb-4" style="width: 18rem;">
+            <img src="./pics/spaceInvaders.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title text-center">Space Invaders</h5>
+                <p class="card-text">
+                    El objetivo de Space Invaders, que fue uno de los primeros videojuegos.
+                    lanzado, es desplazarse por una pantalla y disparar enjambres descendentes de extraterrestres, evitando llegar al final de la pantalla</p>
+                <a href="#" class="btn btn-primary" style="background-color: #e4a101; border: none;">Play now</a>
+            </div>
+        </div>
+        <div class="card mb-4" style="width: 18rem;">
+            <img src="./pics/pacMan.jpg" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title text-center">Pac-Man</h5>
+                <p class="card-text">Pac-Man es un juego arcade de laberinto desarrollado y lanzado por Namco en 1980. El el jugador controla a Pac-Man, que debe comer todos los puntos dentro de un laberinto cerrado mientras evita cuatro fantasmas de colores.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #e4a101; border: none;">Play now</a>
+            </div>
+        </div>
+        <div class="card mb-4" style="width: 18rem;">
+            <img src="./pics/contra.jpg" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title text-center">Contra</h5>
+                <p class="card-text">
+                    Contra es un videojuego de correr y disparar desarrollado y publicado por Konami, lanzado originalmente el 20 de febrero de 1987 es un juego de arcade que funciona con monedas .</p>
+                <a href="#" class="btn btn-primary" style="background-color: #e4a101; border: none;">Play now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ACA TERMINA JUEGOS -->
+
+    <!-- ACA EMPIEZA FOOTER -->
+    <footer>
+        <div class="container-footer">
+            <div class="col-12">
+                <div class="newsletter-wrap container-subs">
+                    <div class="section-title newsletter-title">
+                        <h2>Our <span>Newsletter</span></h2>
+                    </div>
+                    <div class="newsletter-form">
+                        <form action="#">
+                            <div class="newsletter-form-grp">
+                                <i class="far fa-envelope"></i>
+                                <input type="email" placeholder="Enter your email...">
+                            </div>
+                            <button>SUBSCRIBE <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="footer-logo mb-35">
+                                    <a href="index.html"><img src="../Menu_Footer/pics/social-icons.png" alt=""></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Gemas marketplace the relase etras thats sheets continig passag.</p>
+                                    <div class="footer-contact">
+                                        <ul>
+                                            <li><i class="fas fa-map-marker-alt"></i> <span>Address : </span>PO Box W75 Street
+                                                lan West new queens</li>
+                                            <li><i class="fas fa-headphones"></i> <span>Phone : </span>+24 1245 654 235</li>
+                                            <li><i class="fas fa-envelope-open"></i><span>Email : </span>info@exemple.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Products</h5>
+                                </div>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#">Graphics (26)</a></li>
+                                        <li><a href="#">Backgrounds (11)</a></li>
+                                        <li><a href="#">Fonts (9)</a></li>
+                                        <li><a href="#">Music (3)</a></li>
+                                        <li><a href="#">Photography (3)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Need Help?</h5>
+                                </div>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#">Terms &amp; Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Refund Policy</a></li>
+                                        <li><a href="#">Affiliate</a></li>
+                                        <li><a href="#">FAQUse Cases</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Follow us</h5>
+                                </div>
+                                <div class="footer-social">
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.instagram.com/livingindiatv/">instagram<span></span></a></li>
+                                        <li><a href="https://in.pinterest.com/livingindiatv/">pinterest<span></span></a></li>
+                                        <li><a href="https://youtube.com">youtube<span></span></a></li>
+                                        <li><a href="https://plus.google.com/102689304172526656580">gplus<span></span></a></li>
+                                        <li><a href="https://twitter.com/livingindiatv">twitter<span></span></a></li>
+                                        <li><a href="https://www.facebook.com/livingindiatv/">facebook<span></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widget mb-50">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <!-- ACA EMPIEZAN LOS SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="../Menu_Footer/menu.js"></script>
+    
+    
+</body>
+
+</html>

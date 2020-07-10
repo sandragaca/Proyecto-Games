@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=ç, initial-scale=1.0">
+  <title>Triki</title>
+  <link rel="stylesheet" href="../stylesjuegos/triki.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700&display=swap">
+</head>
+<body>
+  <h1>¡TRIKI!</h1>
+  <div class="container-out">
+    <div class="container-in">
+    <div class="table-container">
+        <p>Jugador <span id="player">X</span> tu turno</p>
+        <table align="center">
+        <tr>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+        </tr>
+        <tr>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+        </tr>
+        <tr>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+        </tr>
+        </table>
+
+        <h2 id="message">Jugador <span id="winner"></span> Gana</h2>
+        <button id="reset">Reiniciar</button>
+    </div>
+    </div>
+  </div>
+    <script src="../scriptjuegos/triki.js"></script>
+</body>
+</html>
